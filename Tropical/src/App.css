@@ -42,7 +42,124 @@
 } */
 
 
-.App{
-  background-color: rgb(35, 43, 43);
-}
+
 /* Set up react and add all the tags*/
+
+.App {
+  text-align: center;
+  background-color: #e6f2ff;
+  padding: 20px;
+}
+
+.Header {
+  margin-bottom: 20px;
+}
+
+.header-image {
+  width: 100%;
+  max-width: 400px; /* Set a max width for larger screens */
+  height: auto;
+  object-fit: scale-down;
+  border-radius: 50%;
+}
+
+.title {
+  color: #ffffff;
+  -webkit-text-stroke: 1px #ff4d4d;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.986);
+  font-size: 2rem; /* Scalable for different screens */
+  font-weight: bold;
+  font-family: 'Inknut Antiqua', sans-serif;
+}
+
+/* Responsive Flexbox */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.food-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  width: 100%;
+  max-width: 300px; /* Limit width for larger screens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container {
+  width: 100%;
+  padding-top: 100%; /* 1:1 aspect ratio */
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.food-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h3 {
+  font-size: 1.5rem; /* Adjust font size for scalability */
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.more-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.more-button:hover {
+  background-color: #ff3333;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .header-image {
+    width: 80%;
+    height: auto;
+  }
+  
+  .title {
+    font-size: 2rem; /* Smaller font size for tablets */
+  }
+
+  .food-card {
+    width: 45%; /* 2 cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+
+  .food-card {
+    width: 100%; /* Single card per row on mobile */
+  }
+
+  .more-button {
+    padding: 8px 16px; /* Smaller buttons for mobile */
+  }
+}
