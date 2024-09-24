@@ -97,4 +97,5 @@ export default TropicalFusionTruck;
 
 Added description of the website in README
 Removed py file that was for testing purposes to setup conda
+Testing the gif link
  */ 
