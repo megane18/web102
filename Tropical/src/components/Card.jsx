@@ -94,4 +94,6 @@ export default TropicalFusionTruck;
 - Each dish is represented by a FoodCard component, which includes an image, title, cuisine type, and a button linking to the recipe.
 - Added links to various Haitian recipes to provide users with easy access to cooking instructions.
 - Included images for each dish to enhance the visual appeal of the application.
+
+Added description of the website in README
  */ 

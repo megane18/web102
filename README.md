@@ -2,7 +2,15 @@
 
 Submitted by: Megane Alexis
 
-This web app: **insert description**
+This web app: The Tropical Fusion Truck website showcases traditional Haitian cuisine through an engaging and user-friendly interface. Its primary goal is to promote Haitian dishes and provide users with easy access to authentic recipes.
+
+Key Features:
+Vibrant Visuals: High-quality images of popular Haitian dishes enhance the user experience.
+Diverse Food Selection: Explore a variety of dishes, such as Tassot, Diri Djon Djon, and Griot, each with an image and title.
+Recipe Links: Each food card includes a button directing users to detailed recipes, encouraging culinary exploration.
+Modular Design: Built with reusable components for easy updates and maintenance.
+Cultural Appreciation: Educates users about the significance of Haitian cuisine and fosters appreciation for its flavors.
+Overall, the website serves as a culinary resource for anyone interested in discovering and trying authentic Haitian food.
 
 Time spent: 2 hours spent in total
 
