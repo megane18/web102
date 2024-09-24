@@ -96,4 +96,5 @@ export default TropicalFusionTruck;
 - Included images for each dish to enhance the visual appeal of the application.
 
 Added description of the website in README
+Removed py file that was for testing purposes to setup conda
  */ 
