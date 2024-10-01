@@ -32,6 +32,7 @@ I added some slight animations to my translations
 Here's a walkthrough of implemented required features:
 
 <img src='http://i.imgur.com/a/8h1uai8' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+http://i.imgur.com/a/8h1uai8
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  

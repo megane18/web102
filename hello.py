@@ -4,3 +4,4 @@
 # say_hello("Megane")
 
 #Changed the favicon and added the README
+#Fixed the imgur in the README
