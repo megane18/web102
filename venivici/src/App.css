@@ -1,0 +1,66 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+/*
+
+
+Implement Haiti Explorer app with interactive fact generator, weather integration, and city exploration
+
+- Create React app with random Haiti fact generator using local data
+- Integrate weather API for real-time conditions in Haitian cities
+- Add Unsplash API integration for dynamic city images
+- Implement fact ban system for categories and titles
+- Create fact history tracking and display
+- Add city selection dropdown for weather and image exploration
+- Implement responsive grid layout with reusable Button and Card components
+- Add error handling and display for API failures
+- Implement environment variable usage for API key security
+- Create custom CSS styles for Haiti theme
+- Add city name overlay on images
+- Optimize image loading with random selection
+- Implement fact filtering based on ban list
+- Add weather data display (temperature, conditions, humidity)
+- Handle empty states for exhausted facts
+- Implement loading states for API calls
+*/
