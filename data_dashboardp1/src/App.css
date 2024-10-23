@@ -1,0 +1,91 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+/*
+      Initial project setup with React and basic folder structure
+
+Set up a new React project and created the necessary file structure.
+Add global styles and app layout
+
+Implemented global CSS styles for the app and designed the main layout with responsive grid and animation support.
+Create BreweryDashboard component and state management
+
+Created the BreweryDashboard component and added state management using useState and useEffect hooks.
+Fetch breweries data from Open Brewery API
+
+Integrated the Open Brewery API to fetch brewery data and display the initial list of breweries.
+Add loading spinner and error handling
+
+Added a loading spinner while fetching data and implemented basic error handling for API requests.
+Implement search functionality for breweries by name and city
+
+Added a search input to filter breweries by name or city using the searchTerm state.
+Add filtering by state and brewery type
+
+Implemented dropdown filters to filter breweries by state and type.
+Create brewery cards and display brewery details
+
+Created brewery cards to display details like name, location, type, phone number, and a link to the website.
+Add pagination and 'Load More' button
+
+Implemented pagination with a 'Load More' button to fetch and display more breweries in batches.
+Style updates for brewery cards and hover effects
+
+Added hover effects to brewery cards and refined the layout for mobile and desktop views.
+Enhance brewery type display with color-coded banners
+
+Added color-coded banners to visually differentiate brewery types.
+Add empty state handling for no search results
+
+Implemented a user-friendly empty state message when no breweries match the search or filter criteria.
+Optimize app responsiveness and improve mobile layout
+
+Improved responsive design for better usability on smaller screens.
+Fix API loading issue with page increments
+
+Resolved issue with API pagination, ensuring proper data fetching when loading more breweries.
+Add animations for smooth UI transitions
+
+Integrated CSS animations for smooth transitions on page load, brewery cards, and filters.
+*/
