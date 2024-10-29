@@ -1,0 +1,61 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+
+/*
+
+  - [x] Created a dashboard view displaying a dataset of breweries
+- [x] Implemented dynamic links using React Router for each data point on the dashboard
+- [x] Created a detail view for each brewery with additional information
+- [x] Fetched brewery details based on a unique `id` in the detail view
+- [x] Added loading states for both the dashboard and detail views
+- [x] Displayed an error message for a brewery not found
+- [x] Implemented search functionality for breweries by name or city
+- [x] Added filtering options for brewery state and type
+- [x] Displayed bar and pie charts for data visualization
+- [x] Implemented top 10 states by number of breweries in a bar chart
+- [x] Added brewery type distribution in a pie chart
+- [x] Displayed stats for total breweries, states covered, and brewery types
+- [x] Paginated data for breweries with a "Load More" button
+
+*/
