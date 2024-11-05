@@ -1,0 +1,379 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --primary-bg: #000f2b;
+    --secondary-bg: #001f4d;
+    --primary-color: #ff0000;
+    --accent-color: #0066ff;
+    --visor-color: #99ccff;
+  }
+  
+  /* App container */
+  .app {
+    background: var(--primary-bg);
+    min-height: 100vh;
+    color: white;
+    padding: 1rem;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+  }
+  
+  .title {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    margin: 2rem 5rem;
+  }
+  
+  /* Form styles */
+  .crewmate-form {
+    background: var(--secondary-bg);
+    padding: 1.5rem;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.2);
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+ 
+  .input {
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--primary-bg);
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  /* Color options */
+  .color-options {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    justify-items: center;
+  }
+  
+  .color-option {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+  
+  .color-option.selected {
+    border-color: white;
+    transform: scale(1.1);
+  }
+  
+  /* Buttons */
+  .button {
+    padding: 0.75rem 1.25rem;
+    background: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-size: 0.9rem;
+  }
+  
+
+  .button a {
+    list-style: none;
+    padding: 0.75rem 1.25rem;
+    background: var(--primary-color);
+    border: none;
+    margin: 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    font-size: 0.9rem;
+  }
+  .button:hover {
+    background: #cc0000;
+    transform: translateY(-2px);
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .button-group .button {
+    flex: 1;
+  }
+  
+  /* Grid layout */
+  .crewmate-grid {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  /* Card styles */
+  .crewmate-card {
+    background: var(--secondary-bg);
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .crewmate-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .crewmate-card h3 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  
+  .crewmate-card p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Avatar */
+  .crewmate-avatar {
+    width: 80px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .crewmate-body {
+    background: currentColor;
+    width: 80%;
+    height: 80%;
+    border-radius: 40px 40px 20px 20px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+  
+  .crewmate-visor {
+    background: var(--visor-color);
+    width: 60%;
+    height: 30%;
+    border-radius: 8px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+  }
+  
+  /* Card actions */
+  .card-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .card-actions .button {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  /* Empty state */
+  .empty-state {
+    text-align: center;
+    padding: 2rem;
+    background: var(--secondary-bg);
+    border-radius: 15px;
+    margin: 2rem auto;
+    max-width: 600px;
+  }
+  
+  .empty-state h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  /* Mobile adjustments */
+  @media (max-width: 480px) {
+    .app {
+      padding: 0.5rem;
+    }
+  
+    .container {
+      padding: 0 0.5rem;
+    }
+  
+    .crewmate-form {
+      padding: 1rem;
+    }
+  
+    .button-group {
+      flex-direction: column;
+    }
+  
+    .card-actions {
+      flex-direction: column;
+    }
+  
+    .card-actions .button {
+      width: 100%;
+    }
+  
+    .color-options {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.25rem;
+    }
+  
+    .color-option {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  /* Tablet adjustments */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .crewmate-grid {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  
+  /* Detail view */
+  .crewmate-detail {
+    background: var(--secondary-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .crewmate-detail h2 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+  
+  .crewmate-detail p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  /* Loading state */
+  .loading {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+
+
+  /* .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: var(--secondary-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.2);
+    text-align: center;
+    animation: slideIn 0.3s ease-out;
+  }
+  
+  .modal-content p {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  } */
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: red;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    min-width: 300px;
+    text-align: center;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    line-height: 1;
+  }
+  
+  .modal-content p {
+    margin: 0;
+    padding: 10px;
+    font-size: 16px;
+  }
